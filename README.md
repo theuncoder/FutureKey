@@ -1,4 +1,4 @@
-# FutureKey
+# Future Key
 
 A static website for a digital currency (bitcoin) consultancy.
 
