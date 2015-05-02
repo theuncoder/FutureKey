@@ -1,0 +1,144 @@
+html, body {
+  font-size: 100%;
+  font-family: "helvetica Neue", helvetica, arial, sans-serif;
+  color: #fbfcfc;
+}
+
+html, body, header, div, article, #videowrapper iframe, article p, footer {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #354b60;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+header h1:hover, .first h2:hover, .second h2:hover, .third h2:hover {
+    cursor: default;
+  }
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  flex: 0 0 33.33%;
+  align-items: stretch;
+}
+
+.content {
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+article p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media all and (max-width: 850px) {
+  article {
+    flex: 0 0 100%;
+  }
+
+  header h1 {
+    font-size: 2.7rem;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  article h2 {
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+}
+
+@media all and (min-width: 851px) {
+  article h2 {
+    padding: 2.5rem 2rem 2.5rem 2rem;
+  }
+}
+
+.first {
+  background-color: #ea6153;
+}
+
+.first h2 {
+  color: #ea6153; /*rgba(235,61,0,1);*/
+  background-color: rgba(255,225,224,1);
+}
+
+#video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-top: 2rem;
+}
+
+#video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.second {
+  background-color: #f4a62a; /*rgba(255,184,0,1);*/
+}
+
+.second h2 {
+  color: #f4a62a; /*rgba(255,184,0,1);*/
+  background-color: rgba(255,244,222,1);
+}
+
+.third {
+  background-color: rgba(120,169,60,1);
+}
+
+.third h2 {
+  color: rgba(120,169,60,1);
+  background-color: rgba(228,240,220,1);
+}
+
+.button {
+  font-size: 1.3rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #354b60;
+  float: left;
+  line-height: 1.2;
+  text-align: center;
+  padding: .5rem 2rem .5rem 2rem;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: #fbfcfc;
+  text-decoration: none;
+}
+
+.button {
+  border: .2rem solid #fbfcfc;
+  border-radius: 5px;
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+.button:hover {
+  background-color: rgba(235,235,235,.1)
+}
